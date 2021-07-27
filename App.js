@@ -28,7 +28,7 @@ const App = () => {
           name="Home"
           component={Home}
           options={{
-            title: 'SHOE SELECTOR',
+            title: 'NIKE STORE',
             headerStyle: {
               //backgroundColor: '#f4511e',
             },
@@ -36,10 +36,10 @@ const App = () => {
             headerTitleStyle: {
               ...FONTS.navTitle
             },
-            headerLeft: ({ onPress }) => (
+            headerLeft: () => (
               <TouchableOpacity
                 style={{ marginLeft: SIZES.padding }}
-                onPress={onPress}
+                onPress={() => console.log("Pressed menu")}
               >
                 <Image
                   source={icons.menu}
