@@ -26,6 +26,10 @@ const App = () => {
     'CarmenSans-SemiBold': require('./assets/fonts/CarmenSans-SemiBold.otf'),
   });
 
+  if (!loaded) {
+    return null;
+  }
+
   return (
     <NavigationContainer theme={theme}>
       <Stack.Navigator

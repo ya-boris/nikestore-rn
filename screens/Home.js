@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView, View, Text, Image, TouchableOpacity, FlatList, Modal } from 'react-native'
+import { StyleSheet, View, Text, Image, TouchableOpacity, FlatList, Modal } from 'react-native'
 import { Svg, Polygon } from 'react-native-svg';
 import { BlurView } from "expo-blur";
 
