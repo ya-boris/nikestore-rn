@@ -2,6 +2,7 @@ import React from 'react';
 import { Image, TouchableOpacity } from 'react-native';
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
+import { useFonts } from 'expo-font';
 
 // screens
 import { Home } from "./screens/";
@@ -19,6 +20,12 @@ const theme = {
 const Stack = createStackNavigator();
 
 const App = () => {
+  const [loaded] = useFonts({
+    'CarmenSans-Thin': require('./assets/fonts/CarmenSans-Thin.otf'),
+    'CarmenSans-Regular': require('./assets/fonts/CarmenSans-Regular.otf'),
+    'CarmenSans-SemiBold': require('./assets/fonts/CarmenSans-SemiBold.otf'),
+  });
+
   return (
     <NavigationContainer theme={theme}>
       <Stack.Navigator
